@@ -1,2 +1,3 @@
-# Piecewise-ICP
-Efficient and robust registration for 4D point clouds
+# Piecewise-ICP: Efficient and Robust Registration for 4D Point Clouds in Permanent Laser Scanning
+
+Thank you for your interest. Codes will be available soon!
