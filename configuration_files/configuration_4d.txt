@@ -1,0 +1,11 @@
+string FolderFilePath1: data/data_synthetic/syntheticPC_with_transformations
+string FolderFilePath2: results/4DPCReg/
+bool isSetResSVsize (yes-1, no-0): 1
+float PCres1 (m): 0.005
+float PCres2 (m): 0.005
+float SVsize1 (m): 0.05
+float SVsize2 (m): 0.05
+bool isSetDTinit (yes-1, no-0): 1
+float DTinit (m): 0.05
+float DTmin (m): 0.004
+bool isVisual (yes-1, no-0): 0
