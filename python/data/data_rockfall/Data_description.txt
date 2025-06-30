@@ -1,0 +1,9 @@
+* Six epoch scans (as test examples) can be downloaded at: https://syncandshare.lrz.de/getlink/fiUHSG2S5JDQY1GMrMnWen/
+
+* The file name indicates the acquisition time of the point cloud: "SINGLESCANS - YYMMDD_HHMMSS".
+* The first epoch (2021-07-29 12:00:11) is taken as the reference epoch. All other epoch scans are registered to this reference epoch.
+* All point clouds are in PCD (Point Cloud Data) format and can be directly imported into CloudCompare software for viewing and editing.
+* Each point has coordinates (x, y, z) in the scanner's local coordinate system, along with radiometric information (Reflectance and Amplitude).
+* Further descriptions such as data acquisition procedures can be found in Section 4.3 (Rockfall in Vals Valley) in the publication.
+
+This rockfall dataset is provided by Prof. Dr.-Ing. Daniel Czerwonka-Schröder from the Department of Geodesy, Bochum University of Applied Sciences.
