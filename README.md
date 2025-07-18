@@ -45,6 +45,10 @@ Building **Piecewise-ICP** in `Windows` requires the following compiler and libr
 ## 📖 Instructions
 The program provides two modes: **pairwise registration** and **4D point cloud registration**. The former only registers a single source point cloud to a target point cloud, while the latter can register a point cloud time series to a specified reference point cloud (usually set as the first scan).
 
+#### ⚠️ ***Piecewise-ICP*** requires the following prerequisites to ensure successful registration:
+1. **Coarse alignment** must be completed in advance. This algorithm assumes that the input point clouds are already roughly aligned within a reasonable error range.
+2. **Stable overlapping areas** must exist between point clouds. _Piecewise-ICP_ is not suitable for global registration of scenarios with full-scene shift or deformation.
+
 ### Parameter configuration
 All registration parameters (e.g., file path, patch size, distance threshold, visualization control, etc.) are specified in an external `.txt` configuration file:
 
