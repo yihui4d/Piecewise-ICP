@@ -73,7 +73,7 @@ bool readConfigFile(std::string conFile, ConfigPara &confPara)
 		confPara.SVsize1 = std::stof(numtemp);
 		cout << "6 SVsize1: " << "*" << confPara.SVsize1 << "*" << endl;
 	}
-	if (confPara.SVsize1 < confPara.PCres1) {
+	if (confPara.SVsize1 < confPara.PCres1 || confPara.SVsize1 > 40*confPara.PCres1) {
 		std::cerr << "SVsize1 out of limits! \n" << endl;
 		return false;
 	}
@@ -85,7 +85,7 @@ bool readConfigFile(std::string conFile, ConfigPara &confPara)
 		confPara.SVsize2 = std::stof(numtemp);
 		cout << "7 SVsize2: " << "*" << confPara.SVsize2 << "*" << endl;
 	}
-	if (confPara.SVsize2 < confPara.PCres2) {
+	if (confPara.SVsize2 < confPara.PCres2 || confPara.SVsize2 > 40*confPara.PCres2) {
 		std::cerr << "SVsize2 out of limits! \n" << endl;
 		return false;
 	}
@@ -491,4 +491,5 @@ void visualizeThreePC(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud1, string name1, 
 	while (!viewer->wasStopped())
 		viewer->spinOnce(100);
 }
+
 
